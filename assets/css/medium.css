@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,600;8..144,700&family=Spectral:wght@400;600;700&display=swap');
+
+/*GENERALE-ALL*/
+body {
+    font-family: 'roboto serif', serif;
+}
+
+h1, h2, h3 {
+    font-family: 'spectral';
+    font-weight: 600
+}
+
+hr {
+    color: lightgray;
+}
+
+
+@media screen and (min-width: 552px) {
+    /*GENERALE-MOBILE*/
+    .sparizioneMobile{
+        display: none;
+    }   
+
+    body {
+        font-size: 1.2rem;
+    }
+
+    
+ /*HEADER*/
+    header{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #ffc017;
+        padding: 1rem 2rem;
+        border-bottom: black 1.5px solid;
+        z-index: 1;
+    }
+    nav{
+        display: flex;
+    }
+
+    nav li {
+        list-style: none;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+
+    nav li:hover {
+        cursor: pointer;
+    }
+
+    nav button {
+        color: white;
+        background-color: black;
+        border-radius: 25px;
+        border: none;
+        font-family: 'roboto';
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        margin-right: 3rem;
+    }
+
+    nav button:hover {
+        cursor: pointer;
+        background-color: rgb(35, 35, 35);
+    }
+
+    /*MAIN-PRIMAPARTE-MOBILE*/
+
+    main {
+        margin-top: 5rem;
+        font-family: 'roboto serif', serif;
+    }
+
+    #contenitoreQuote {
+        font-size: 1.5rem;
+        background-color: #ffc017;
+        border-bottom: black 1.5px solid;
+        padding: 6rem 2rem;
+    }
+
+    h1 {
+        font-size: 4.8rem;
+        margin-bottom: 2rem;
+    }
+
+    #scritteQuote button {
+        color: white;
+        background-color: black;
+        border-radius: 25px;
+        border: none;
+        font-size: 1.2rem;
+        font-family: 'roboto';
+        font-weight: 500;
+        padding: 0.5rem 3rem;
+        margin-top: 3rem;
+    }
+
+    #scritteQuote button:hover {
+        cursor: pointer;
+        background-color: rgb(35, 35, 35);
+    }
+
+    /*MAIN-SECONDAPARTE-MOBILE*/
+
+    #tranding {
+        margin: 2rem 1rem;
+    }
+
+
+    #tranding h2 span{
+        margin-right: 1rem;
+    }
+
+    .articoliTranding {
+        display: flex;
+        margin: 4rem 0rem;
+    }
+
+    .articoliTranding p {
+        margin-right: 1.5rem;
+    }
+
+    .articoliTranding .numerazioneTrading {
+        color: lightgray;
+        font-size: 2rem;
+        font-weight: 900;
+        opacity: 40%;
+    }
+
+    .articoliTranding h3 {
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    .nomeArticolosti {
+        display: flex;
+    }
+    .nomeArticolosti p {
+        font-size: 1rem;
+        margin-top: 0.7rem;
+        margin-left: 1rem;
+    }
+
+    .nomeArticolosti img {
+        border-radius: 30px;
+        margin-bottom: 1rem;
+    }
+
+    .dataPubblicazione {
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-between;
+        color: lightgray;
+    }
+
+    /*ASIDE-RPIMAPARTE-MOBILE*/
+
+    aside {
+        margin: 2rem 1rem;
+    }
+
+
+    aside h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .contenitoreTag {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .tag{
+        color: lightgray;
+        font-size: 1rem;
+        border: #F2F2F2 solid 2.5px;
+        margin: 0.4rem 0rem;
+        padding: 0.8rem;
+    }
+
+    .tag:hover{
+        cursor: pointer;
+        color: rgb(180, 180, 180);
+        border: rgb(180, 180, 180) solid 2.5px;
+        background-color: #F2F2F2;
+    }
+
+    /*ASIDE-SECONDAPARTE-MOBILE*/
+
+    .contenitoreAiuto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aiuto {
+        font-size: 1rem;
+        color: lightgray;
+        margin:0.3rem 1rem;
+    }
+
+    .aiuto:hover {
+        cursor: pointer;
+        color: rgb(180, 180, 180);
+    }
+
+    /*SECTION-MOBILE*/
+
+    .contenitoreArticolo {
+        font-size: 1rem;
+        display: flex;
+        margin: 2rem 1rem;
+    }
+
+    .imgGrandi {
+        width: 25vh;
+        height: 20vh;
+        margin-top: 2rem;  
+        margin-left: 2rem;
+    }
+
+    .contenitoreArticolo h3{
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .dataPubblicazioneSection {
+        font-size: 0.8rem;
+        color: lightgray;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .dataPubblicazioneSection img {
+        margin-bottom: 3rem;
+    }
+
+    .dataPubblicazioneSection img:hover {
+        cursor: pointer;
+    }
+
+    .tagArticle {
+        color: rgb(168, 168, 168);
+        cursor: pointer;
+    }
+   
+}
